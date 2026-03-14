@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔罗牌占卜</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>塔罗牌占卜</h1>
+        <div class="controls">
+            <button id="shuffleBtn">洗牌</button>
+            <button id="drawBtn">抽牌</button>
+            <button id="resetBtn">重置</button>
+            <div class="theme-selector">
+                <label for="themeSelect">主题：</label>
+                <select id="themeSelect">
+                    <option value="gold">黑金</option>
+                    <option value="blue">蓝金</option>
+                    <option value="red">红金</option>
+                    <option value="green">绿金</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-container">
+            <div id="deckArea" class="deck-area"></div>
+            <div id="cardArea" class="card-area"></div>
+        </div>
+        <div class="ai-interpretation-section">
+            <div class="user-question">
+                <label for="userQuestion">您的问题：</label>
+                <input type="text" id="userQuestion" placeholder="请输入您想咨询的问题...">
+            </div>
+            <button id="aiInterpretBtn" disabled>开始解读</button>
+        </div>
+        <div id="interpretation" class="interpretation"></div>
+        <div id="aiInterpretation" class="ai-interpretation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
