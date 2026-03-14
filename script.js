@@ -1,5 +1,5 @@
 // 通义API Key (请在此处填写您的API Key)
-const TONGYI_API_KEY = "sk-8d0fa59203724b9fa4a26a32e139d8ee";
+const TONGYI_API_KEY = "";
 
 // 塔罗牌数据 - 78张牌（大阿卡那22张 + 小阿卡那56张）
 const tarotCards = [
